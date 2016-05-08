@@ -1,0 +1,2 @@
+# botiga
+Projecte Gestio Botiga
