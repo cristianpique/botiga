@@ -28,12 +28,14 @@ void inicialitzaProductesArxiu(char* filename, producte productes[N]);
 
 /***
  * Retorna el nom del producte identificat per idProducte dintre de la variable productes
+ * Si no existeix retorna "\0"
  **/
 char* nomProducte(int idProducte, producte productes[N]);
 
 /***
  * Retorna el codi del proveidor que subministra el producte identificat per idProducte dintre de la
  * variable productes.
+ * Si no existeix retorna -1
  **/
 int codiProveidor(int idProducte, producte productes[N]);
 
@@ -48,11 +50,10 @@ int numeroProductesSubministraProveidor(int idProveidor, producte productes[N]);
 /***
  * AMPLIACIÓ
  * 
- * Retorna un vector d'enters amb els identificadors ordenars de menor a major dels proveidors que no 
- * subministren cap producte.
- * Retorna un null pointer si tots els proveidors subministren algun producte.
+ * Retorna un enter amb el total de proveidors que no subministren cap producte.
+ * Retorna 0 si tots els proveidors subministren algun producte.
  * 
  **/
- int* proveidorsSenseProductes(proveidor proveidors[P], producte productes[N]);
+ int proveidorsSenseProductes(proveidor proveidors[P], producte productes[N]);
 
 #endif

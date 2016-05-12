@@ -34,3 +34,16 @@ void inicialitzaStockExemple(int exemple, int stock[N+N]) {
 		stock[9]= 8;
 	}
 }
+
+int quantitatProducteEnStock(int idProducte, int stock[N+N]){
+								int i;
+								for (i=0; i<N+N; i++) {
+											if(){
+											     }
+											else(){
+												return -1;
+											        }
+										      }
+							    }
+								
+}

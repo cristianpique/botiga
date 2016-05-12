@@ -1,5 +1,10 @@
 #include "clients.h"
 
+void main(){
+		inicialitzaClientsExemple(1);
+		emailClient(1);
+}
+
 void inicialitzaClientsExemple(int exemple, client clients[C]) {
 	// <2, “practica@botiga.com”> <1,”c@botiga.com”> <7,”programando@c.com”>
 	// Inicialitcem a -1 per indicar que no hi ha informació
@@ -32,3 +37,14 @@ void inicialitzaClientsExemple(int exemple, client clients[C]) {
 	}
 
 }
+
+char* emailClient(int idClient, client clients[P]){
+						    int i;
+
+						    for (i=0; i<P; i++) {
+	                                                                 if(idClient==clients[i].id){
+											              return clients[i].email;
+									       			    }
+                                                                        }
+							return "\0";
+						  }
