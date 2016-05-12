@@ -31,3 +31,14 @@ void inicialitzaProveidorsExemple(int exemple, proveidor proveidors[P]) {
 		proveidors[2].email = "hi@provider.com";
 	}
 }
+
+char* emailProveidor(int idProveidor, proveidor proveidors[P]){
+								int i;
+								for (i=0;i<P;i++){
+										   if(idProveidor==proveidors[i].id){
+															proveidors[i].email;
+														     
+														     }
+										  }
+								return "\0";
+								}
