@@ -37,13 +37,24 @@ void inicialitzaStockExemple(int exemple, int stock[N+N]) {
 
 int quantitatProducteEnStock(int idProducte, int stock[N+N]){
 								int i;
-								for (i=0; i<N+N; i++) {
-											if(){
-											     }
-											else(){
-												return -1;
-											        }
-										      }
+								for (i=0;i<N+N;i++) {
+										     if(idProducte=){
+												      return stock[i];
+												    }
+										    }
+									  return -1;
 							    }
-								
-}
+
+int existeixProducte(int idProducte, int stock[N+N]) {
+							int i;
+
+						    	for (i=0;i<N+N;i++) {
+	                                                                     if(idProducte==stock[i]){
+												      return 1;
+									       			     }
+									    }
+							           return 0;
+						     }
+
+void modificaStock(int idProducte, int novaQuantitat, int stock[N+N]) {
+									}

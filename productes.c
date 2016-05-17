@@ -55,4 +55,34 @@ void inicialitzaProductesExemple(int exemple, producte productes[N]) {
 	}
 }
 
+char* nomProducte(int idProducte, producte productes[N]) {
+							   int i;
+							   for (i=0;i<N;i++) {
+									       if (idProducte==productes[i].id) {
+														   return productes[i].nom;
+													          }
+									     }
+							   return "\0";
+							 }
 
+int codiProveidor(int idProducte, producte productes[N]) {
+							    int i;
+							    for (i=0;i<N;i++) {
+									       if (idProducte==productes[i].idProveidor) {
+														       return productes[i].idProveidor;
+													              }
+									      }
+							   return -1;
+							 }
+
+int numeroProductesSubministraProveidor(int idProveidor, producte productes[N]) {
+										  int i;
+							                          for (i=0;i<N;i++) {
+									                             if (idProveidor==productes[i].idProveidor) {
+														               return productes[i];
+													                      }
+									                            }
+										}
+
+int proveidorsSenseProductes(proveidor proveidors[P], producte productes[N]) {
+									      }
