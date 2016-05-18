@@ -32,13 +32,14 @@ void inicialitzaProveidorsExemple(int exemple, proveidor proveidors[P]) {
 	}
 }
 
-char* emailProveidor(int idProveidor, proveidor proveidors[P]){
-								int i;
-								for (i=0;i<P;i++){
-										   if(idProveidor==proveidors[i].id){
-															proveidors[i].email;
-														     
-														     }
+char* emailProveidor(int idProveidor, proveidor proveidors[P]) {
+								for (i=0;i<P;i++) {
+										   if (idProveidorproveidors[i].id==) {
+                                                                                                                       return proveidors[i].email;
+														      }
+								      return "\0";
 										  }
-								return "\0";
-								}
+
+
+
+		
