@@ -39,7 +39,3 @@ char* emailProveidor(int idProveidor, proveidor proveidors[P]) {
 														      }
 								      return "\0";
 										  }
-
-
-
-		
