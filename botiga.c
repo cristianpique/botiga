@@ -85,6 +85,12 @@ int main(int argc, char* argv[]) {
 
 	int existeixClientSortida(int idClient, missatgeClients sortidaClients) {
 										 int i;
-										 }
+										 for(i=0;i<sortidaClients;i++){
+													       if(idClient==sortidaClients[i]){
+																	      return 1;
+																              }
+												     return 0;
+												              }
+									        }
     
 }

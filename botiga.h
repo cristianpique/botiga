@@ -94,12 +94,14 @@ int existeixProveidorSortida(int idProveidor, missatgeProveidors sortidaProveido
 int existeixClientSortida(int idClient, missatgeClients sortidaClients);
 
 /***
- * Ordena el missatge de sortidaProveidors per idProveidor en ordre ascendent
+ * Ordena el missatge de sortidaProveidors per idProveidor en ordre descendent
+ * i a més ordena comandesProducteQuantitat per idProducte descendent
  **/
 void ordenaSortidaProveidors(missatgeProveidors sortidaProveidors);
 
 /***
- * Ordena el missatge de sortidaProveidors per idClient en ordre ascendent
+ * Ordena el missatge de sortidaProveidors per idClient en ordre descendent
+ * i a més ordena productesSenseStock per idProducte descendent
  **/
 void ordenaSortidaClients(missatgeClients sortidaClients);
 
@@ -108,12 +110,12 @@ void ordenaSortidaClients(missatgeClients sortidaClients);
  * Si existeix un arxiu de configuració retorna la sortida en un arxiu sino per
  * la sortida estàndard 
  **/
-void escriureSortida(int argc, char* argv[], missatgeProveidors sortidaProveidors, missatgeClients sortidaClients);
+void escriureSortida(int argc, char* argv[], producte productes[N], client clients[C], proveidor proveidors[P], missatgeProveidors sortidaProveidors, missatgeClients sortidaClients);
 
 /***
  * Escriu la sortidaProveidors i la sortidaClients en un arxiu identificat per 
  * filename amb el format de l'enunciat
  **/
-void escriureSortidaArxiu(char* filename, missatgeProveidors sortidaProveidors, missatgeClients sortidaClients);
+void escriureSortidaArxiu(char* filename, producte productes[N], client clients[C], proveidor proveidors[P], missatgeProveidors sortidaProveidors, missatgeClients sortidaClients);
 
 #endif

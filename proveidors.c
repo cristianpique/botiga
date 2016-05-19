@@ -37,5 +37,5 @@ char* emailProveidor(int idProveidor, proveidor proveidors[P]) {
 										   if (idProveidorproveidors[i].id==) {
                                                                                                                        return proveidors[i].email;
 														      }
-								      return "\0";
 										  }
+								      return "\0";
