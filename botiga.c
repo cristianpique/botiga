@@ -72,5 +72,19 @@ int main(int argc, char* argv[]) {
 
 	// Un cop inicialitzat podem llegir el fitxer que retorna la web i processar les comandes.
 	processaComandes(argc, argv, stock, productes, clients, proveidors, sortidaProveidors, sortidaClients);
+
+	int existeixProveidorSortida(int idProveidor, missatgeProveidors sortidaProveidors) {
+											     int i;
+											     for(i=0;i<sortidaProveidors;i++){
+														 if(idProveidor==sortidaProveidors[i]){
+																	      return 1;
+																                       }
+														     return 0;
+												                              }
+											    }
+
+	int existeixClientSortida(int idClient, missatgeClients sortidaClients) {
+										 int i;
+										 }
     
 }
