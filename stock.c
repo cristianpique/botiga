@@ -57,4 +57,22 @@ int existeixProducte(int idProducte, int stock[N+N]) {
 						     }
 
 void modificaStock(int idProducte, int novaQuantitat, int stock[N+N]) {
-									}
+									int i;
+							       
+									 for (i=0;i<N+N;i++){
+	                                                                                     if(idProducte==stock[i]){
+												                      stock[i]=novaQuantitat;
+									       			                     }
+										            }
+								      }
+
+int quantitatProducteEnStock(int idProducte, int stock[N+N]) {
+							      int i;
+							       
+							      for (i=0;i<N+N;i++){
+	                                                                          if(idProducte==stock[i]){
+												           return stock[i];
+									       			          }
+										 }
+							               return -1;
+							     }
