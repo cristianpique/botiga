@@ -87,9 +87,11 @@ int numeroProductesSubministraProveidor(int idProveidor, producte productes[N]) 
 int proveidorsSenseProductes(proveidor proveidors[P], producte productes[N]) {
 									      int i;
 							                      for (i=0;i<P;i++) {
-									                         if (productes[i].==) {
-														     return int;
-													            }
+									                         int j;
+												 for (j=0;j<N;j++) {
+														    if(proveidors[j].id==){
+															 }
+													           }
 									                        }
 										       return 0;
 									     }
